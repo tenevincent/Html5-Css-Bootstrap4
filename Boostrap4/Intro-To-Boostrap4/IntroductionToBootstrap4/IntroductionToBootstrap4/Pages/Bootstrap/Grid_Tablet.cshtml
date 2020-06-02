@@ -1,0 +1,24 @@
+﻿@page
+@model IntroductionToBootstrap4.Pages.Bootstrap.Grid_TabletModel
+@{
+    ViewData["Title"] = "Grid_Tablet";
+}
+
+
+<div class="container sample">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-8">
+            Small: 12 Tablet: 6 Large: 8
+        </div>
+        <div class="col-6 col-md-4">
+            Small: 6 Large: 4
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 col-md-4">A Small: 6 Tablet: 4</div>
+        <div class="col-6 col-md-4">B Small: 6 Tablet: 4</div>
+        <div class="col-6 d-md-none">
+            C Small: 6 Tablet: invisible
+        </div>
+    </div>
+</div>

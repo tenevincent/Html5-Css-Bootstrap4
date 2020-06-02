@@ -1,0 +1,54 @@
+﻿@page
+@model IntroductionToBootstrap4.Pages.CSS3.Chapter03Model
+@{
+    ViewData["Title"] = "Chapter03";
+}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css">
+    <style type="text/css">
+        .myclass {
+        }
+        /* Selects any element with class name myclass */
+        p.myclass {
+        }
+        /* Selects any <p> element with class name myclass */
+
+        .info {
+            color: green;
+        } 
+            
+        p.warn {
+            color: orange;
+        }
+
+     
+        #myid {
+        }
+        /* Selects the element with id set to myid */
+        p#myid {
+        }
+        /* Selects the <p> element with id set to myid */
+
+        #err {
+            color: red;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <p>This page is red</p>
+    
+    <p class="info"> Green</p>
+
+
+    <p class="warn"> Orange</p>
+
+    <p class="style1 style2"> </p>
+
+    <p id="err"> Red</p>
+</body>
+

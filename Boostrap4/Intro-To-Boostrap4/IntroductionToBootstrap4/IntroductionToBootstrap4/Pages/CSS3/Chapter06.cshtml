@@ -1,0 +1,71 @@
+﻿@page
+@model IntroductionToBootstrap4.Pages.CSS3.Chapter06Model
+@{
+    ViewData["Title"] = "Chapter06";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+    <style>
+        p {
+            border: inherit;
+        }
+        /* inherit parent's border */
+        body {
+            color: gray;
+        }
+        /* set document text color to gray */
+
+        /* Adjacent selector */
+        div + p {
+            color: red;
+        }
+
+        /* Descendent selector */
+        div p {
+            background: gray;
+        }
+        /* Direct child selector */
+        div > span {
+            color: green;
+        }
+        /* General sibling selector */
+        h1 ~ p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+    <p>Paragraph</p>
+</body>
+</html>
+
+
+<div>Not red</div>
+<p>Red</p>
+<p>Not red</p>
+
+
+<div>
+    <p>Gray</p>
+</div>
+
+
+<div>
+    <p>
+        <span>Not green</span>
+    </p>
+    <span>Green</span>
+</div>
+
+
+
+<p>Not blue</p>
+<h1>Not blue</h1>
+<p>Blue</p>
+<p>Blue</p>

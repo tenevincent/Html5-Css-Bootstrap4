@@ -1,0 +1,65 @@
+﻿@page
+@model IntroductionToBootstrap4.Pages.CSS3.Chapter04Model
+@{
+    ViewData["Title"] = "Chapter04";
+}
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css">
+    <style type="text/css">
+
+        /* Attribute selector */
+        input[type] {
+        }
+        /* Attribute value selector */
+        input[type="submit"]{
+
+        }
+        /* Language attribute selector */
+        p[lang|="en"] {
+        }
+        /* Delimited value selector */
+        input[value~="word"] {
+        }
+
+        /* Value substring selector */
+        p[title*="para"] {
+        }
+        /* Value start selector */
+        p[title^="first"] {
+        }
+
+        /* Value end selector */
+        p[title$="1"] {
+        }
+    </style>
+</head>
+
+
+
+<input type="text">
+
+
+<input type="submit">
+
+
+<p lang="en">English</p>
+<p lang="en-US">American English</p>
+
+
+<input type="text" value="word">
+<input type="text" value="word word2">
+
+
+<p title="my paragraph"></p>
+
+
+<p title="first paragraph"></p>
+
+
+<p title="paragraph 1"></p>
+

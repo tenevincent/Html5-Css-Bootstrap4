@@ -1,0 +1,31 @@
+﻿@page
+@model IntroductionToBootstrap4.Pages.Bootstrap.Grid_FlexModel
+@{
+    ViewData["Title"] = "Grid_Flex";
+}
+
+
+    <div class="container-fluid sample">
+        <div class="row">
+            <div class="col-sm">.col-sm <br> 1 of 3 (33%)</div>
+            <div class="col-sm">.col-sm <br> 1 of 3 (33%)</div>
+            <div class="col-sm">.col-sm <br> 1 of 3 (33%)</div>
+        </div>
+        <div class="row">
+            <div class="col-sm">.col-sm <br> 1 of 1 (100%)</div>
+        </div>
+        <div class="row">
+            <div class="col-sm">.col-sm <br> 1 of 2 (50%)</div>
+            <div class="col-sm">.col-sm <br> 1 of 2 (50%)</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                .col-sm-8 <br>
+                Fixed 8 of 12 (66%), the other columns in
+                the row will split the remaining 4 (33%)
+            </div>
+            <div class="col-sm">.col-sm</div>
+            <div class="col-sm">.col-sm</div>
+        </div>
+    </div>
+

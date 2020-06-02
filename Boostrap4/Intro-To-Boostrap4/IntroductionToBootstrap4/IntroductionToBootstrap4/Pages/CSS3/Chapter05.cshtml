@@ -1,0 +1,314 @@
+﻿@page
+@model IntroductionToBootstrap4.Pages.CSS3.Chapter05Model
+@{
+    ViewData["Title"] = "Chapter05";
+}
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css">
+    <style type="text/css">
+       
+        
+        /* first-letter and first-line */
+        p:first-letter {
+            font-size: 120%;
+            color : red;
+        }
+
+        p:first-line {
+            font-weight: bold; 
+        }
+
+        /* before and after */
+        p:before {
+            content: "Before";
+        }
+
+        p:after {
+            content: "After";
+        }
+
+        p.bullet:before {
+            content: url(my-bullet.png);
+        }
+
+        /* link and visited */
+        a:link {
+        }
+        /* unvisited links */
+        a:visited {
+        }
+        /* visited links */
+
+        /* active and hover */
+        a:active {
+        }
+        /* activated links */
+        a:hover {
+        }
+        /* hovered links */
+
+        /* focus */
+        input:focus {
+        }
+
+        /* first-child */
+        p:first-child {
+        }
+        /* first paragraph child */
+        /* last-child */
+        p:last-child {
+        }
+        /* last paragraph child */
+        /* only-child */
+        p:only-child {
+        }
+        /* children without siblings */
+
+        /* only-of-type */
+        p:only-of-type {
+        }
+
+        /* first-of-type */
+        p:first-of-type {
+        }
+        /* last-of-type */
+        strong:last-of-type {
+        }
+
+        /* nth-child */
+        p:nth-child(1) {
+        }
+        /* first child */
+        p:nth-child(2n) {
+        }
+        /* even children */
+        p:nth-child(2n+1) {
+        }
+        /* odd children */
+        tr:nth-child(even) {
+        }
+        /* even table rows */
+        tr:nth-child(odd) {
+        }
+        /* odd table rows */
+        p:nth-child(-n+3) {
+        }
+        /* first three children */
+
+        /* nth-of-type */
+        p:nth-of-type(2) {
+        }
+        /* second paragraph sibling */
+        p:nth-of-type(2n) {
+        }
+        /* even paragraph siblings */
+        p:nth-of-type(2n+1) {
+        }
+        /* odd paragraph siblings */
+
+
+        p:nth-of-type(even) {
+        }
+        /* even paragraph siblings */
+        p:nth-of-type(odd) {
+        }
+        /* odd paragraph siblings */
+
+        /* nth-last-of-type */
+        p:nth-last-of-type(3) {
+        }
+        /* third last paragraph */
+        p:nth-last-of-type(-n+2) {
+        }
+        /* last two paragraphs */
+        /* nth-last-child */
+        p:nth-last-child(3) {
+        }
+        /* third last child */
+        p:nth-last-child(-n+2) {
+        }
+        /* last two children */
+
+
+        /* empty */
+        p:empty {
+        }
+        /* empty paragraphs */
+
+        /* root */
+        :root {
+        }
+        /* root element */
+
+        /* enabled and disabled */
+        input:enabled {
+            background: green;
+        }
+
+        input:disabled {
+            background: red;
+        }
+
+        /* checked */
+        input[type="checkbox"]:checked {
+        }
+
+
+        /* valid and invalid */
+        input:valid {
+            background: green;
+        }
+
+        input:invalid {
+            background: red;
+        }
+
+
+        /* target */
+        :target {
+            font-weight: bold;
+        }
+        /* targeted element */
+        /* required and optional */
+        input:required {
+            color: red;
+        }
+
+        input:optional {
+            color: gray;
+        }
+
+
+        /* lang */
+        p:lang(en) {
+        }
+        /* not */
+        p:not(.first) {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+
+
+
+<p> Middle</p> <!-- "BeforeMiddleAfter" -->
+
+
+<p>
+    <span> First child</span>
+    <span> Text</span>
+</p>
+
+
+<p>
+    <em> Text</em>
+    <em> Last child</em>
+</p>
+
+
+<p>
+    <strong> Only child</strong>
+</p>
+<p>
+    <strong> Text</strong>
+    <em> Text</em>
+</p>
+
+
+
+<div>
+    <h1> Text</h1>
+    <p> Only of type</p>
+</div>
+
+
+
+<div>
+    <h1> Text</h1>
+    <p> First of type</p>
+    <p> Text</p>
+</div>
+
+
+<div>
+    <strong> Text</strong>
+    <strong> Last of type</strong>
+</div>
+
+
+<p>
+    <span> First and odd</span>
+    <span> Even</span>
+    <span> Odd</span>
+</p>
+
+
+
+<div>
+    <em> Text</em>
+    <p> Odd</p>
+    <p> Second and even</p>
+    <p> Odd</p>
+</div>
+
+
+
+<div>
+    <p> Third last</p>
+    <p> Last two</p>
+    <p> Last two</p>
+    <em> Text</em>
+</div>
+
+
+<div>
+    <p> Third last</p>
+    <p> Last two</p>
+    <p> Last two</p>
+</div>
+
+
+<p> </p>
+<p><!-- also empty --> </p>
+
+
+
+<form>
+    <input type="text" name="enabled">
+    <input type="text" name="disabled" disabled>
+</form>
+
+<form>
+    <input type="checkbox">
+</form>
+
+
+<form>
+    <input type="email" required>
+    <input type="email">
+</form>
+
+<form>
+    <input type="email" required>
+    <input type="url">
+</form>
+
+
+<a href="#my-target" id="my-target"> In page link</a>
+
+<p lang="en"> English</p>
+<body lang="fr">
+    <p> French</p>
+</body>
+
+
+<p class="first"> Not bold</p>
+<p> Bold</p>
+
+
