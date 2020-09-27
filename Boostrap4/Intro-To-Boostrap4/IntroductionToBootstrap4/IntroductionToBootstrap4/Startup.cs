@@ -11,6 +11,9 @@ using Microsoft.Extensions.Hosting;
 
 namespace IntroductionToBootstrap4
 {
+    /// <summary>
+    /// https://github.com/joergkrause/bootstrap4-book/tree/master/Client-En
+    /// </summary>
     public class Startup
     {
         public Startup(IConfiguration configuration)
