@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <style>
+    .sample {
+      font-size: 125%;
+      width: 450px;
+      border: 1px dotted silver;
+      padding: 15px;
+    }
+
+    body {
+      margin: 50px;
+    }
+
+    colgroup col.success {
+      background-color: #dff0d8;
+    }
+
+    colgroup col.error {
+      background-color: #f2dede;
+    }
+
+    colgroup col.warning {
+      background-color: #fcf8e3;
+    }
+
+    colgroup col.info {
+      background-color: #d9edf7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container sample">
+    <table class="table table-bordered table-condensed">
+      <colgroup>
+        <col class="success" />
+        <col class="warning" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Anton Muller</td>
+          <td>Edit | Delete</td>
+        </tr>
+        <tr>
+          <td>Bob Thornten</td>
+          <td>Edit | Delete</td>
+        </tr>
+        <tr>
+          <td>Britney Belle</td>
+          <td>Edit | Delete</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2" class="text-md-right info">2</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</body>
+</html>
